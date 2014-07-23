@@ -159,8 +159,7 @@ module Gollum
     #
     # Returns the String title
     def url_path_title
-      # metadata_title || url_path_display
-      'Foobar'
+      metadata_title || url_path_display
     end
 
     # Public: Metadata title
