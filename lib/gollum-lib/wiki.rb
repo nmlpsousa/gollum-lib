@@ -235,7 +235,7 @@ module Gollum
       @allow_uploads        = options.fetch :allow_uploads, false
       @per_page_uploads     = options.fetch :per_page_uploads, false
       @filter_chain         = options.fetch :filter_chain,
-                                            [:Metadata, :PlainText, :TOC, :RemoteCode, :Code, :Sanitize, :WSD, :Tags, :Render]
+                                            [:Metadata, :PlainText, :TOC, :RemoteCode, :Code, :Sanitize, :WSD, :Tags, :Section, :Render, :Transclusion, :SectionEnd]
     end
 
     # Public: check whether the wiki's git repo exists on the filesystem.
